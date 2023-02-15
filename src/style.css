@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700;800;900&display=swap');
+
+#root {
+  padding: 3em;
+}
+
+#app {
+  font-family: "Albert Sans", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  margin-top: 60px;
+  border: 1px #0006 solid;
+  padding: 3em;
+  border-radius: 1em;
+  box-shadow: 0 0 1em #0006;
+  font-size: 1rem;
+}
+
+#logos {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+}
+
+#logos img {
+  width: 15vw;
+  transition: 0.5s ease-in-out;
+}
+
+#logos img:hover {
+  transition: 0.5s ease-in-out;
+  filter: drop-shadow(0 0 1em #ff7);
+}
+
+#logo-spin {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background: #228;
+  }
+}
